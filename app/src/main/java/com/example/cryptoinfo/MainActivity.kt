@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.loading)
-        supportActionBar?.hide()
+        //setSupportActionBar(findViewById(R.id.toolbar))
 
         Handler().postDelayed({
             val intent = Intent(this@MainActivity, CryptoActivity::class.java)
